@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OUR MEMORIES // 19.11.2026</title>
+  <!-- 100% Vietnamese Supported Fonts: Cormorant Garamond (Editorial Serif), Shantell Sans & Patrick Hand (Handwritten), Be Vietnam Pro (UI Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Patrick+Hand&family=Shantell+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Analog Film Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Twinkling Starfield Background -->
+  <div class="starfield-bg" id="starfield-bg" aria-hidden="true"></div>
+
+  <!-- Ambient Moonlight Halo (Reference 3) -->
+  <div class="moon-halo" aria-hidden="true"></div>
+
+  <!-- ======================================================================
+       STAGE 0A: PRELOADER / RELOAD SCREEN
+       ====================================================================== -->
+  <div class="preloader-screen" id="preloader-screen" aria-label="Loading Frequency">
+    <div class="preloader-inner">
+      <svg viewBox="0 0 32 32" class="preloader-star" aria-hidden="true">
+        <path d="M16 0 L18.2 12.2 L28 4 L19.8 13.8 L32 16 L19.8 18.2 L28 28 L18.2 19.8 L16 32 L13.8 19.8 L4 28 L12.2 18.2 L0 16 L12.2 13.8 L4 4 L13.8 12.2 Z" />
+      </svg>
+      <span class="preloader-kicker">TUNING FREQUENCY // 19.11.2026</span>
+      <div class="preloader-counter" id="preloader-counter">00%</div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill" id="preloader-bar-fill"></div>
+      </div>
+      <span class="preloader-sub">LOADING CASSETTE &amp; 35MM ROLL</span>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       STAGE 0B: INTRO GATE SCREEN (ENTER TO MAIN PAGE)
+       ====================================================================== -->
+  <section class="intro-gate" id="intro-gate" aria-label="Intro Screen">
+    <div class="intro-gate-card">
+      <div class="intro-celestial" aria-hidden="true">
+        <svg viewBox="0 0 32 32" class="star-svg">
+          <path d="M16 0 L18.2 12.2 L28 4 L19.8 13.8 L32 16 L19.8 18.2 L28 28 L18.2 19.8 L16 32 L13.8 19.8 L4 28 L12.2 18.2 L0 16 L12.2 13.8 L4 4 L13.8 12.2 Z" />
+        </svg>
+      </div>
+
+      <p class="intro-date-tag">19.11.2026 // INTERNATIONAL MEN'S DAY</p>
+
+      <h2 class="intro-display-title">
+        <span>O</span><span>U</span><span class="italic-glyph">R</span>
+        <span>M</span><span>E</span><span class="italic-glyph">M</span><span>O</span><span class="italic-glyph">R</span><span>Y</span>
+      </h2>
+
+      <p class="intro-hand-note">
+        một cuộn băng nhỏ dành riêng cho <span class="glow-word">anh Sang</span>
+      </p>
+
+      <button type="button" class="intro-enter-btn" id="intro-enter-btn">
+        <span class="enter-btn-label">ENTER</span>
+        <span class="enter-btn-sub">chạm để mở băng</span>
+      </button>
+    </div>
+  </section>
+
+  <main class="archive-page main-hidden" id="main-archive">
+
+    <!-- ====================================================================
+         1. EDITORIAL HEADER
+         ==================================================================== -->
+    <header class="editorial-header">
+      <div class="star-ornament">
+        <svg viewBox="0 0 32 32" class="star-svg" aria-hidden="true">
+          <path d="M16 0 L18.2 12.2 L28 4 L19.8 13.8 L32 16 L19.8 18.2 L28 28 L18.2 19.8 L16 32 L13.8 19.8 L4 28 L12.2 18.2 L0 16 L12.2 13.8 L4 4 L13.8 12.2 Z" />
+        </svg>
+      </div>
+
+      <h1 class="display-title">
+        <span>C</span><span>A</span><span class="italic-glyph">S</span><span>S</span><span>E</span><span class="italic-glyph">T</span><span>T</span><span>E</span>
+      </h1>
+
+      <p class="editorial-sub">
+        HAPPY INTERNATIONAL MEN'S DAY <span class="bracket">[19.11.2026]</span>
+      </p>
+    </header>
+
+    <!-- ====================================================================
+         2. INTERACTIVE CASSETTE TAPE SECTION (REFERENCE 1)
+         ==================================================================== -->
+    <section class="cassette-stage" aria-label="Interactive Cassette Player">
+      <!-- Top handwritten dedication -->
+      <div class="handwritten-quote quote-top">
+        <p>Gửi anh già của <span class="glow-word">em Đon</span></p>
+      </div>
+
+      <!-- The Cassette Tape Asset (Click directly on the tape to play/pause) -->
+      <div class="cassette-wrapper" id="cassette-unit" role="button" tabindex="0" aria-label="Bấm vào băng cassette để phát hoặc tạm dừng bản thu âm">
+        <div class="cassette-body">
+          <!-- Corner Screws -->
+          <span class="screw screw-tl"></span>
+          <span class="screw screw-tr"></span>
+          <span class="screw screw-bl"></span>
+          <span class="screw screw-br"></span>
+
+          <!-- Inner Navy Sticker Label -->
+          <div class="cassette-label">
+            <!-- Tiny SVG Stars & Crescent Moon on Label -->
+            <div class="label-constellation" aria-hidden="true">
+              <span class="tiny-star s1"></span>
+              <span class="tiny-star s2"></span>
+              <span class="tiny-star s3"></span>
+            </div>
+
+            <div class="label-header">
+              <span class="record-artist" id="track-artist">VOICE NOTE // 19.11.2026</span>
+              <div class="record-title-row">
+                <span class="record-title" id="track-title">Gửi anh Sang</span>
+                <svg class="crescent-svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M14.5 2.5C9.5 3.5 6 8 7 13.5C8 19 13 22 18.5 21C14 23 8 20.5 6 15.5C4 10.5 6.5 4.5 11.5 2.5C12.5 2.2 13.5 2.2 14.5 2.5Z" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="label-side-info" id="tape-side-indicator">
+              <span>SIDE</span>
+              <strong>A</strong>
+              <small>03:13</small>
+            </div>
+
+            <!-- Center Spindle Window -->
+            <div class="cassette-window">
+              <!-- Left Reel -->
+              <div class="reel" id="reel-left">
+                <div class="reel-teeth">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <!-- Center Magnetic Tape Reader & Play Prompt Overlay -->
+              <div class="window-glass">
+                <div class="tape-spool-left" id="spool-left"></div>
+                <div class="tape-spool-right" id="spool-right"></div>
+                <div class="window-center-line"></div>
+                <!-- Subtle glowing play icon inside the window when paused -->
+                <div class="window-play-badge" id="window-play-badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" class="play-triangle-svg">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Right Reel -->
+              <div class="reel" id="reel-right">
+                <div class="reel-teeth">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom fine print on cassette sticker -->
+            <div class="label-footer">
+              <span class="brand-mark">RECORD</span>
+              <span class="fine-print">ANALOG AUDIO CASSETTE. PRIVATE FREQUENCY ARCHIVE.</span>
+            </div>
+          </div>
+
+          <!-- Bottom Trapezoid Ridge with 4 Holes -->
+          <div class="cassette-bottom-ridge">
+            <span class="ridge-hole h-outer-l"></span>
+            <span class="ridge-hole h-inner-l"></span>
+            <span class="ridge-hole h-inner-r"></span>
+            <span class="ridge-hole h-outer-r"></span>
+          </div>
+        </div>
+
+        <!-- Visual Tap Prompt pointing directly to the Cassette -->
+        <div class="cassette-tap-prompt" id="cassette-tap-prompt">
+          <svg class="hand-arrow-svg" viewBox="0 0 36 36" aria-hidden="true">
+            <path d="M18 30 C18 22, 18 14, 18 6 M18 6 L11 13 M18 6 L25 13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span id="tap-prompt-text">chạm vào băng để nghe</span>
+        </div>
+      </div>
+
+      <!-- HTML5 Audio Element wired to your .m4a recording -->
+      <audio id="voice-audio" src="assets/voice-record.m4a" preload="metadata"></audio>
+    </section>
+
+    <!-- ====================================================================
+         3. 35MM FILM CANISTER & SCROLLING POLAROID REEL (REFERENCE 2)
+         ==================================================================== -->
+    <section class="film-roll-section" aria-label="Scrolling Film and Polaroid Archive">
+      <!-- Handwritten scroll down cue positioned right above the film canister -->
+      <div class="handwritten-quote quote-bottom">
+        <p class="memory-line">
+          <svg class="hand-heart-filled" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          <span class="glow-word">scroll down</span>
+          <svg class="hand-heart-outline" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+        </p>
+      </div>
+
+      <!-- Top 35mm Film Canister -->
+      <div class="film-canister-wrapper">
+        <button type="button" class="film-canister" id="canister-toggle" aria-expanded="true">
+          <div class="canister-lip"></div>
+          <div class="canister-body">
+            <div class="canister-left">
+              <span class="canister-num">19</span>
+              <span class="canister-sub">35MM</span>
+            </div>
+            <div class="canister-center">
+              <span class="canister-date">* 20261119 *</span>
+              <span class="canister-kanji">FILM ROLL</span>
+              <span class="canister-code">10 FRAMES</span>
+            </div>
+            <div class="canister-right">
+              <span class="canister-month">NOV.</span>
+            </div>
+          </div>
+        </button>
+
+        <!-- Vertical Unrolling 35mm Film Strip containing all 10 Scrollable Polaroids -->
+        <div class="film-strip-container unrolled" id="film-strip">
+          <div class="sprocket-column sprocket-left" aria-hidden="true"></div>
+
+          <!-- Populated dynamically from your 10 assets in script.js -->
+          <div class="film-frames-track" id="polaroid-scroll-track"></div>
+
+          <div class="sprocket-column sprocket-right" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. EDITORIAL FOOTER WATERMARK (REFERENCE 3)
+         ==================================================================== -->
+    <footer class="editorial-footer">
+      <div class="footer-meta-row">
+        <span>Cam on vi da den</span>
+        <span>va yeu em</span>
+      </div>
+      <div class="watermark-title" aria-hidden="true">LOVE U</div>
+    </footer>
+
+  </main>
+
+  <!-- Lightbox Modal when inspecting a Polaroid photo or video asset -->
+  <div class="polaroid-modal" id="polaroid-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-content">
+      <div class="modal-polaroid" id="modal-polaroid-card">
+        <div class="modal-photo" id="modal-photo-box"></div>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="deck-btn" id="modal-close-btn">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
